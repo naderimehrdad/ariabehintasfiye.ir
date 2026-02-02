@@ -76,7 +76,7 @@ const I18N = {
     "nav.rnd": "R&D",
     "nav.contact": "Contact",
 
-    "hero.h1": "Aria Behin Tasfiye (Private Joint Stock)",
+    "hero.h1": "Aria Behin Tasfiye",
     "hero.p": "Efficient, cost-effective, and environmentally responsible solutions for industries, organizations, and construction projects.",
     "hero.cta1": "Get Consultation",
     "hero.cta2": "Learn More",
@@ -141,7 +141,7 @@ const I18N = {
     "nav.rnd": "البحث والتطوير",
     "nav.contact": "اتصل بنا",
 
-    "hero.h1": "شركة آريا بهين تصفية الفنية والهندسية (مساهمة خاصة)",
+    "hero.h1": "شركة آريا بهين تصفية الفنية والهندسية",
     "hero.p": "حلول فعّالة واقتصادية ومتوافقة مع البيئة للصناعات والمؤسسات والمشاريع الإنشائية.",
     "hero.cta1": "طلب استشارة",
     "hero.cta2": "اعرف المزيد",
