@@ -26,16 +26,47 @@ a{color:inherit;text-decoration:none}
   backdrop-filter: blur(8px);
   border-bottom:1px solid var(--border);
 }
-.header__inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:10px 0;
+}
 
-.brand{display:flex;align-items:center;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:230px}
 .brand__logo{width:54px;height:54px;object-fit:contain}
 .brand__text strong{display:block;font-size:14px;letter-spacing:.5px}
 .brand__text span{display:block;font-size:12px;color:var(--sub)}
 
-.nav{display:flex;flex-wrap:wrap;gap:12px}
+.nav{display:flex;flex-wrap:wrap;gap:10px}
 .nav a{font-size:14px;color:var(--sub);padding:6px 10px;border-radius:10px}
 .nav a:hover{background:var(--muted);color:var(--text)}
+
+.lang-switch{
+  display:flex;
+  gap:6px;
+  align-items:center;
+  padding:6px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:#fff;
+}
+.lang-btn{
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:10px;
+  padding:6px 10px;
+  font-weight:700;
+  cursor:pointer;
+  font-size:12px;
+}
+.lang-btn:hover{background:var(--muted)}
+.lang-btn.is-active{
+  background:var(--brand);
+  color:#fff;
+  border-color:var(--brand);
+}
 
 .hero{padding:42px 0;background:linear-gradient(180deg,#ffffff 0%, #f8fafc 100%)}
 .hero__inner{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
@@ -66,6 +97,30 @@ a{color:inherit;text-decoration:none}
   color:var(--text);
 }
 
+/* CEO */
+.ceo{
+  display:grid;
+  grid-template-columns: 220px 1fr;
+  gap:24px;
+  align-items:center;
+}
+.ceo__image img{
+  width:100%;
+  border-radius:18px;
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.ceo__content h3{
+  margin:8px 0 4px;
+  font-size:20px;
+}
+.ceo__title{
+  color:var(--sub);
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+/* Contact */
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
 .contact__box{
   background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px;
@@ -78,8 +133,9 @@ a{color:inherit;text-decoration:none}
 .contact__list em{color:var(--sub);font-style:normal}
 
 label{display:block;margin:10px 0;color:var(--sub);font-size:14px}
+label > span{display:inline-block;margin-bottom:6px}
 input,textarea{
-  width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);
+  width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--border);
   font:inherit;outline:none;background:#fff
 }
 input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130,246,.12)}
@@ -87,7 +143,7 @@ input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130
 .btn{
   display:inline-flex;align-items:center;justify-content:center;
   padding:10px 14px;border-radius:12px;border:1px solid var(--border);
-  font-weight:600;cursor:pointer
+  font-weight:700;cursor:pointer
 }
 .btn--primary{background:var(--brand);border-color:var(--brand);color:#fff}
 .btn--primary:hover{filter:brightness(.95)}
@@ -101,44 +157,16 @@ input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130
 .hint{color:var(--sub);opacity:.85;margin-top:10px;font-size:12px}
 
 @media (max-width: 900px){
+  .header__inner{flex-wrap:wrap}
+  .brand{min-width:unset}
   .hero__inner{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr}
   .nav{justify-content:flex-start}
-}
-.ceo{
-  display:grid;
-  grid-template-columns: 220px 1fr;
-  gap:24px;
-  align-items:center;
+  .ceo{grid-template-columns:1fr;text-align:center}
+  .ceo__image{max-width:240px;margin:0 auto}
 }
 
-.ceo__image img{
-  width:100%;
-  border-radius:18px;
-  border:1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.ceo__content h3{
-  margin:8px 0 4px;
-  font-size:20px;
-}
-
-.ceo__title{
-  color:var(--sub);
-  font-weight:600;
-  margin-bottom:12px;
-}
-
-@media (max-width: 768px){
-  .ceo{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-  .ceo__image{
-    max-width:240px;
-    margin:0 auto;
-  }
-}
-
+/* EN layout tweak (LTR) */
+html[dir="ltr"] .nav{justify-content:flex-end}
+html[dir="ltr"] .brand{flex-direction:row}
