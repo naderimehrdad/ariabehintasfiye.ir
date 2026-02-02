@@ -43,7 +43,7 @@ a{color:inherit;text-decoration:none}
 .nav a{font-size:14px;color:var(--sub);padding:6px 10px;border-radius:10px}
 .nav a:hover{background:var(--muted);color:var(--text)}
 
-.lang-switch{
+.lang-links{
   display:flex;
   gap:6px;
   align-items:center;
@@ -52,17 +52,17 @@ a{color:inherit;text-decoration:none}
   border-radius:14px;
   background:#fff;
 }
-.lang-btn{
+.lang-link{
   border:1px solid var(--border);
   background:#fff;
   border-radius:10px;
   padding:6px 10px;
-  font-weight:700;
+  font-weight:800;
   cursor:pointer;
   font-size:12px;
 }
-.lang-btn:hover{background:var(--muted)}
-.lang-btn.is-active{
+.lang-link:hover{background:var(--muted)}
+.lang-link.is-active{
   background:var(--brand);
   color:#fff;
   border-color:var(--brand);
@@ -116,7 +116,7 @@ a{color:inherit;text-decoration:none}
 }
 .ceo__title{
   color:var(--sub);
-  font-weight:700;
+  font-weight:800;
   margin-bottom:12px;
 }
 
@@ -133,9 +133,8 @@ a{color:inherit;text-decoration:none}
 .contact__list em{color:var(--sub);font-style:normal}
 
 label{display:block;margin:10px 0;color:var(--sub);font-size:14px}
-label > span{display:inline-block;margin-bottom:6px}
 input,textarea{
-  width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--border);
+  width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);
   font:inherit;outline:none;background:#fff
 }
 input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130,246,.12)}
@@ -143,7 +142,7 @@ input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130
 .btn{
   display:inline-flex;align-items:center;justify-content:center;
   padding:10px 14px;border-radius:12px;border:1px solid var(--border);
-  font-weight:700;cursor:pointer
+  font-weight:800;cursor:pointer
 }
 .btn--primary{background:var(--brand);border-color:var(--brand);color:#fff}
 .btn--primary:hover{filter:brightness(.95)}
@@ -166,7 +165,3 @@ input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130
   .ceo{grid-template-columns:1fr;text-align:center}
   .ceo__image{max-width:240px;margin:0 auto}
 }
-
-/* EN layout tweak (LTR) */
-html[dir="ltr"] .nav{justify-content:flex-end}
-html[dir="ltr"] .brand{flex-direction:row}

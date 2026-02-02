@@ -1,13 +1,10 @@
-# Aria Behin Tasfiye - Static Site
+# Aria Behin Tasfiye (Static, Multi-language)
 
-این ریپو یک سایت استاتیک ساده (Landing) برای شرکت **آریا بهین تصفیه** است.
+URLs:
+- / (FA)
+- /en/ (EN)
+- /ar/ (AR)
 
-## اجرا به صورت محلی
-فایل `index.html` را باز کنید.
-
-## استقرار با Cloudflare Pages
-- Framework preset: **None**
-- Build command: (خالی)
-- Output directory: (ریشه پروژه)
-
-سپس در Pages → Custom domains دامنه `ariabehintasfiye.ir` را اضافه کنید.
+## Notes
+- Replace `assets/img/ceo-davood-kaheh.jpg` with the real CEO photo if needed.
+- Deploy with Cloudflare Pages (Framework: None).
