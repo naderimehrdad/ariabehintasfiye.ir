@@ -106,3 +106,39 @@ input:focus,textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130
   .contact{grid-template-columns:1fr}
   .nav{justify-content:flex-start}
 }
+.ceo{
+  display:grid;
+  grid-template-columns: 220px 1fr;
+  gap:24px;
+  align-items:center;
+}
+
+.ceo__image img{
+  width:100%;
+  border-radius:18px;
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.ceo__content h3{
+  margin:8px 0 4px;
+  font-size:20px;
+}
+
+.ceo__title{
+  color:var(--sub);
+  font-weight:600;
+  margin-bottom:12px;
+}
+
+@media (max-width: 768px){
+  .ceo{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .ceo__image{
+    max-width:240px;
+    margin:0 auto;
+  }
+}
+
