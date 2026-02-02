@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-lang="fa">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>فنی و مهندسی آریا بهین تصفیه</title>
+  <title>ARIA BEHIN TASFIYE</title>
   <meta name="description" content="طراحی، مشاوره، نظارت و اجرای پروژه‌های آب، فاضلاب، HSE، محیط زیست و انرژی‌های تجدیدپذیر" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -12,20 +12,27 @@
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="آریا بهین تصفیه">
-        <img src="assets/img/logo.jpg" alt="لوگو آریا بهین تصفیه" class="brand__logo" />
+        <img src="assets/img/logo.jpg" alt="Aria Behin Tasfiye Logo" class="brand__logo" />
         <div class="brand__text">
           <strong>ARIA BEHIN TASFIYE</strong>
           <span>Technical & Engineering Co.</span>
         </div>
       </a>
 
-      <nav class="nav" aria-label="ناوبری">
-        <a href="#intro">معرفی</a>
-        <a href="#advantages">مزیت‌ها</a>
-        <a href="#about">درباره ما</a>
-        <a href="#rnd">R&amp;D</a>
-        <a href="#contact">تماس</a>
+      <nav class="nav" aria-label="Navigation">
+        <a href="#intro" data-i18n="nav.intro">معرفی</a>
+        <a href="#ceo" data-i18n="nav.ceo">مدیرعامل</a>
+        <a href="#advantages" data-i18n="nav.advantages">مزیت‌ها</a>
+        <a href="#about" data-i18n="nav.about">درباره ما</a>
+        <a href="#rnd" data-i18n="nav.rnd">R&D</a>
+        <a href="#contact" data-i18n="nav.contact">تماس</a>
       </nav>
+
+      <div class="lang-switch" aria-label="Language switch">
+        <button class="lang-btn is-active" type="button" data-lang-btn="fa">FA</button>
+        <button class="lang-btn" type="button" data-lang-btn="en">EN</button>
+        <button class="lang-btn" type="button" data-lang-btn="ar">AR</button>
+      </div>
     </div>
   </header>
 
@@ -33,19 +40,19 @@
     <section class="hero">
       <div class="container hero__inner">
         <div class="hero__content">
-          <h1>شرکت فنی و مهندسی آریا بهین تصفیه (سهامی خاص)</h1>
-          <p>
+          <h1 data-i18n="hero.h1">شرکت فنی و مهندسی آریا بهین تصفیه (سهامی خاص)</h1>
+          <p data-i18n="hero.p">
             ارائه راهکارهای کارآمد، اقتصادی و سازگار با محیط زیست برای صنایع، سازمان‌ها و پروژه‌های عمرانی کشور
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="#contact">دریافت مشاوره</a>
-            <a class="btn btn--ghost" href="#about">بیشتر بدانید</a>
+            <a class="btn btn--primary" href="#contact" data-i18n="hero.cta1">دریافت مشاوره</a>
+            <a class="btn btn--ghost" href="#about" data-i18n="hero.cta2">بیشتر بدانید</a>
           </div>
         </div>
 
         <div class="hero__card">
-          <h2 id="intro">معرفی کوتاه</h2>
-          <p>
+          <h2 id="intro" data-i18n="intro.h2">معرفی کوتاه</h2>
+          <p data-i18n="intro.p">
             شرکت فنی و مهندسی آریا بهین تصفیه با تکیه بر دانش فنی، تجربه تخصصی و بهره‌گیری از فناوری‌های روز، و با
             همکاری و مشاوره اساتید مطرح و فارغ‌التحصیلان دانشگاه‌های تهران، علوم پزشکی تهران (دانشکده بهداشت) و سایر
             دانشگاه‌های معتبر کشور، در زمینه طراحی، مشاوره، نظارت و اجرای پروژه‌های مرتبط با آب، فاضلاب، HSE، محیط زیست و
@@ -54,52 +61,54 @@
         </div>
       </div>
     </section>
-  <section class="section" id="ceo">
-  <div class="container ceo">
-    <div class="ceo__image">
-      <img src="assets/img/ceo-davood-kaheh.jpg" alt="داود کاهه - مدیرعامل آریا بهین تصفیه">
-    </div>
 
-    <div class="ceo__content">
-      <h2>مدیرعامل</h2>
-      <h3>داود کاهه</h3>
-      <p class="ceo__title">مدیرعامل شرکت فنی و مهندسی آریا بهین تصفیه</p>
+    <!-- CEO (قبل از مزیت‌های رقابتی) -->
+    <section class="section" id="ceo">
+      <div class="container ceo">
+        <div class="ceo__image">
+          <img src="assets/img/ceo-davood-kaheh.jpg" alt="Davood Kaheh - CEO">
+        </div>
 
-      <p>
-        شرکت آریا بهین تصفیه با مدیریت آقای داود کاهه و با تکیه بر دانش فنی،
-        تجربه اجرایی و رویکرد توسعه پایدار، در مسیر ارائه راهکارهای نوین و
-        تخصصی در حوزه آب، فاضلاب و محیط زیست گام برمی‌دارد.
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="ceo__content">
+          <h2 data-i18n="ceo.h2">مدیرعامل</h2>
+          <h3 data-i18n="ceo.name">داود کاهه</h3>
+          <p class="ceo__title" data-i18n="ceo.title">مدیرعامل شرکت فنی و مهندسی آریا بهین تصفیه</p>
+
+          <p data-i18n="ceo.p">
+            شرکت آریا بهین تصفیه با مدیریت آقای داود کاهه و با تکیه بر دانش فنی، تجربه اجرایی و رویکرد توسعه پایدار،
+            در مسیر ارائه راهکارهای نوین و تخصصی در حوزه آب، فاضلاب و محیط زیست گام برمی‌دارد.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="advantages">
       <div class="container">
-        <h2>مزیت‌های رقابتی</h2>
+        <h2 data-i18n="advantages.h2">مزیت‌های رقابتی</h2>
         <div class="grid">
-          <div class="tile">بهره‌گیری از رویکردهای نوین مهندسی و فناوری‌های روز</div>
-          <div class="tile">همکاری علمی با اساتید و متخصصان دانشگاه‌های معتبر کشور</div>
-          <div class="tile">تمرکز بر توسعه پایدار و حفاظت از محیط زیست</div>
-          <div class="tile">توانمندی در طراحی و اجرای پروژه‌های EPC</div>
-          <div class="tile">ارائه خدمات مشاوره تخصصی و مطالعات زیست‌محیطی</div>
+          <div class="tile" data-i18n="advantages.i1">بهره‌گیری از رویکردهای نوین مهندسی و فناوری‌های روز</div>
+          <div class="tile" data-i18n="advantages.i2">همکاری علمی با اساتید و متخصصان دانشگاه‌های معتبر کشور</div>
+          <div class="tile" data-i18n="advantages.i3">تمرکز بر توسعه پایدار و حفاظت از محیط زیست</div>
+          <div class="tile" data-i18n="advantages.i4">توانمندی در طراحی و اجرای پروژه‌های EPC</div>
+          <div class="tile" data-i18n="advantages.i5">ارائه خدمات مشاوره تخصصی و مطالعات زیست‌محیطی</div>
         </div>
       </div>
     </section>
 
     <section class="section section--muted" id="about">
       <div class="container">
-        <h2>درباره ما</h2>
-        <p>
+        <h2 data-i18n="about.h2">درباره ما</h2>
+        <p data-i18n="about.p1">
           شرکت فنی و مهندسی آریا بهین تصفیه با هدف ارائه خدمات تخصصی در حوزه آب، فاضلاب، محیط زیست و انرژی‌های نو تأسیس
           گردیده است. این شرکت با بهره‌گیری از نیروهای متخصص، دانش فنی به‌روز و همکاری و مشاوره مستمر با اساتید دانشگاه‌های
           تهران، علوم پزشکی تهران (دانشکده بهداشت) و سایر مراکز علمی معتبر کشور، تلاش دارد پاسخگوی نیازهای فنی و
           زیست‌محیطی پروژه‌های عمرانی، صنعتی و شهری باشد.
         </p>
-        <p>
+        <p data-i18n="about.p2">
           آریا بهین تصفیه با تمرکز بر اصول توسعه پایدار، کاهش آلاینده‌ها و بهینه‌سازی مصرف منابع، خدماتی جامع از مرحله
           مطالعات و طراحی تا اجرا، بهره‌برداری و نگهداری پروژه‌ها ارائه می‌دهد.
         </p>
-        <p>
+        <p data-i18n="about.p3">
           ما بر این باوریم که تلفیق دانش مهندسی، پشتوانه علمی دانشگاهی و مسئولیت‌پذیری زیست‌محیطی، مسیر دستیابی به آینده‌ای
           پایدار را هموار می‌سازد.
         </p>
@@ -108,44 +117,78 @@
 
     <section class="section" id="rnd">
       <div class="container">
-        <h2>تحقیق و توسعه (R&amp;D)</h2>
-        <p>
+        <h2 data-i18n="rnd.h2">تحقیق و توسعه (R&amp;D)</h2>
+        <p data-i18n="rnd.p1">
           واحد تحقیق و توسعه شرکت آریا بهین تصفیه با هدف ارتقاء دانش فنی، بومی‌سازی فناوری‌ها و ارائه راهکارهای نوین
           زیست‌محیطی فعالیت می‌نماید.
         </p>
-        <p>
+        <p data-i18n="rnd.p2">
           این واحد با همکاری اساتید مطرح، پژوهشگران و فارغ‌التحصیلان دانشگاه‌های تهران، علوم پزشکی تهران (دانشکده بهداشت) و
           سایر دانشگاه‌های معتبر کشور، در زمینه توسعه فناوری‌های نوین تصفیه آب و پساب، تجهیزات زیست‌محیطی و راهکارهای پایدار
           تحقیق و فعالیت می‌کند.
         </p>
       </div>
     </section>
-  
+
     <section class="section section--muted" id="contact">
       <div class="container">
-        <h2>تماس با ما</h2>
-        <p>جهت دریافت مشاوره تخصصی، همکاری و کسب اطلاعات بیشتر با ما در ارتباط باشید.</p>
+        <h2 data-i18n="contact.h2">تماس با ما</h2>
+        <p data-i18n="contact.p">جهت دریافت مشاوره تخصصی، همکاری و کسب اطلاعات بیشتر با ما در ارتباط باشید.</p>
 
         <div class="contact">
           <div class="contact__box">
-            <h3>اطلاعات تماس</h3>
+            <h3 data-i18n="contact.infoTitle">اطلاعات تماس</h3>
             <ul class="contact__list">
-              <li><span>آدرس:</span> <em>تهران، منطقه ۲۲، خیابان کرمانشاه، شهرک الهیه غرب، خیابان سهند، کوچه سهند ۲، پلاک ۷۵، واحد ۲</em></li>
-              <li><span>تلفن ثابت:</span> <a href="tel:+982144784577">۰۲۱-۴۴٧٨۴۵٧٧</a></li>
-              <li><span>تلفن همراه:</span> <a href="tel:+989125142081">۰۹۱۲۵۱۴٢٠٨١</a></li>
-              <li><span>ایمیل:</span> <a href="mailto:info@ariabehintasfiye.ir">info@ariabehintasfiye.ir</a></li>
-              <li><span>دامنه:</span> <a href="https://ariabehintasfiye.ir">ariabehintasfiye.ir</a></li>
+              <li>
+                <span data-i18n="contact.addressLabel">آدرس:</span>
+                <em data-i18n="contact.addressValue">تهران، منطقه ۲۲، خیابان کرمانشاه، شهرک الهیه غرب، خیابان سهند، کوچه سهند ۲، پلاک ۷۵، واحد ۲</em>
+              </li>
+              <li>
+                <span data-i18n="contact.phoneLabel">تلفن ثابت:</span>
+                <a href="tel:+982122782577">۰۲۱-۲۲۷۸۲۵۷۷</a>
+              </li>
+              <li>
+                <span data-i18n="contact.mobileLabel">تلفن همراه:</span>
+                <a href="tel:+989125122581">۰۹۱۲۵۱۲۲۵۸۱</a>
+              </li>
+              <li>
+                <span data-i18n="contact.emailLabel">ایمیل:</span>
+                <a href="mailto:info@ariabehintasfiye.ir">info@ariabehintasfiye.ir</a>
+              </li>
+              <li>
+                <span data-i18n="contact.domainLabel">دامنه:</span>
+                <a href="https://ariabehintasfiye.ir">ariabehintasfiye.ir</a>
+              </li>
             </ul>
           </div>
 
           <form class="contact__box" onsubmit="return false;">
-            <h3>فرم درخواست مشاوره</h3>
-            <label>نام و نام خانوادگی <input type="text" placeholder="مثلاً علی رضایی"></label>
-            <label>شماره تماس <input type="tel" placeholder="09xxxxxxxxx"></label>
-            <label>موضوع <input type="text" placeholder="تصفیه پساب صنعتی"></label>
-            <label>پیام <textarea rows="4" placeholder="توضیحات..."></textarea></label>
-            <button class="btn btn--primary" type="submit" onclick="alert('این فرم فعلاً نمایشی است. برای ارسال واقعی می‌توانیم آن را به سرویس‌های فرم (مثل Formspree) یا بک‌اند وصل کنیم.')">ارسال</button>
-            <small class="hint">  (این بخش موقتا غیرفعال میباشد. لطفاً تماس بگیرید ).</small>
+            <h3 data-i18n="form.title">فرم درخواست مشاوره</h3>
+
+            <label>
+              <span data-i18n="form.name">نام و نام خانوادگی</span>
+              <input type="text" data-i18n-placeholder="form.namePh" placeholder="مثلاً علی رضایی">
+            </label>
+
+            <label>
+              <span data-i18n="form.phone">شماره تماس</span>
+              <input type="tel" data-i18n-placeholder="form.phonePh" placeholder="09xxxxxxxxx">
+            </label>
+
+            <label>
+              <span data-i18n="form.subject">موضوع</span>
+              <input type="text" data-i18n-placeholder="form.subjectPh" placeholder="تصفیه پساب صنعتی">
+            </label>
+
+            <label>
+              <span data-i18n="form.message">پیام</span>
+              <textarea rows="4" data-i18n-placeholder="form.messagePh" placeholder="توضیحات..."></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit" data-i18n="form.submit" onclick="showFormNotice()">
+              ارسال
+            </button>
+            <small class="hint" data-i18n="form.hint">این فرم موقتا غیر فعال است (لطفا تماس بگیرید).</small>
           </form>
         </div>
       </div>
@@ -154,9 +197,9 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="y"></span> آریا بهین تصفیه</span>
+      <span data-i18n="footer.copy">© <span id="y"></span> آریا بهین تصفیه</span>
       <span class="footer__sep">|</span>
-      <a href="#top">بازگشت به بالا</a>
+      <a href="#top" data-i18n="footer.back">بازگشت به بالا</a>
     </div>
   </footer>
 
